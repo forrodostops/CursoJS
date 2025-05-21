@@ -1,0 +1,203 @@
+/* PALETA DE CORES*/
+:root{
+--cor1: #D9D8D7;
+--cor2: #F26E22;
+--cor3: #F24405;
+--cor4: #8C2703;
+--cor5: #0D0000;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--cor5);
+    background-image: linear-gradient(90deg, var(--cor2), var(--cor3));
+    margin: 0px;
+}
+#cabecalho{
+    background-color: var(--cor1);
+    margin: 0px;
+    position: fixed;
+    width: 100%;
+    border-bottom: 3px solid var(--cor4);
+    height: 150px;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+
+}
+h1{
+    
+    color: var(--cor3);
+    text-shadow: var(--cor5);
+}
+form{
+    
+}
+form #inputTarefa{
+    width: 320px;
+    height: 35px;
+    padding-left: 7px;
+    border: none;
+}
+#botaoAdd{
+    width: 100px;
+    height: 36px;
+    background-color: var(--cor2);
+    border: none;
+    color: var(--cor1);
+    transition: 0.3s;
+    cursor: pointer;
+}
+#botaoAdd:hover{
+    background-color:var(--cor4);
+}
+.botaoRemover{
+    margin-left: auto;
+    height: 37px;
+    width: 70px;
+    margin: none;
+    border: none;
+    background-color: var(--cor2);
+    color: var(--cor1);
+    cursor: pointer;
+}
+.botaoRemover:hover{
+    transition-duration: 0.2s;
+    background-color: #b50000;
+}
+.botaoEditar{
+    height: 37px;
+    width: 40px;
+    border: none;
+    background-color: var(--cor4);
+    color: var(--cor1);
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+}
+.botaoEditar:hover{
+    transition-duration: 0.2s;
+    background-color: #07ce00;
+}
+#mensagem{
+    font-size: 18px;
+    color: var(--cor4);
+}
+main{
+    margin-top: 140px;
+    width: 100%;
+    min-height: 100%;
+    display: inline-block;
+    text-align: center;
+}
+main h2{
+    margin-top: 30px;
+    color: var(--cor1);
+}
+#lista{
+    list-style: none;
+    padding: 0px;
+    display: inline-block;
+}
+#lista li{
+    display: flex;
+    align-items: center;
+    padding-left: 7px;
+    margin: 10px 0px;
+    width: 460px;
+    height: 37px;
+    border-radius: 4px;
+    font-size: 17px;
+    background-color: var(--cor1);
+    color: var(--cor4);
+    transition: 0.2s;
+}
+#lista li:hover{
+    background-color: #bfbdbd;
+}
+#fundoMensagem{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color:var(--cor5);
+    display: none;
+    z-index: 1000px;
+}
+#mensagemConfirmando{
+    background-color: var(--cor1);
+    width: 400px;
+    height: 100px;
+    padding: 15px 0px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 4px;
+    margin: 200px auto;
+}
+#cxInterrogativa{ /*CAIXA DE PERGUNTA*/
+
+
+    background-color: var(--cor1);
+    width: 400px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px -5px black;
+    text-align: center;
+
+}
+#textoInterrogativo{
+    margin: 15px 0px;
+}
+#inputTarefaEditada{
+    width: 300px;
+    height: 30px;
+    display: block;
+    margin: 10px auto;
+    padding-left: 7px;
+    border: none;
+    display: none;
+}
+#sim{
+    border: 1px solid var(--cor3);
+    width: 60px;
+    height: 30px;
+    color: var(--cor4);
+    cursor: pointer;
+    margin: 0px 10px;
+}
+#sim:hover{
+    background-color: var(--cor3);
+    color: var(--cor1);
+}
+#nao{
+    border: 1px solid var(--cor3);
+    cursor: pointer;
+    width: 60px;
+    height: 30px;
+    color: var(--cor4);
+    margin: 0px 10px;
+}
+#nao:hover{
+    background-color: var(--cor3);
+    color: var(--cor1);
+}
+#fundo{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: #0000003b;
+    visibility: hidden;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

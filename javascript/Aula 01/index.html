@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juninho Sistemas</title>
+    <link rel="stylesheet" href="style/style02.css">
+</head>
+<body>
+    <header id="cabecalho">
+        <div id="container">
+            <h1>LISTA DE TAREFAS</h1>
+            <form action="#">
+                <input id="inputTarefa" type="text" placeholder="Digite sua tarefa aqui!">
+                <button id="botaoAdd" onclick="criarTarefa()">Adicionar</button>
+            </form>
+            <p id="mensagem"></p>
+        </div>
+    </header>
+    <main>
+        <h2>Minhas Tarefas</h2>
+        <ul id="lista">
+        </ul>
+    </main>
+    <div id="fundo">
+        <div id="cxInterrogativa">
+            <p id="textoInterrogativo">Aqui vai a pergunta ao usuário.</p>
+            <input id="inputTarefaEditada" type="text">
+            <button id="sim">Sim</button><button id="nao" onclick="naoFazer()">Não</button>
+        </div>
+    </div>
+    <script src="java/script.js"></script>
+</body>
+</html>

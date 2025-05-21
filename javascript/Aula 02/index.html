@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juninho Sistemas</title>
+    <link rel="stylesheet" href="style/style02.css">
+    <link rel="shortcut icon" href="imagens/icon-100.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"><!--LINK EXTERNO PARA USAR ICONES-->
+</head>
+<body>
+    <header class="tudo">
+        <div id="logo"><img src="imagens/icon-300-branca.png" alt="logomarca">
+        <span><i id="teste" class="fa-solid fa-bars"></i></span>
+        </div>
+        <div id="tituloPage">
+            <h1><i class="fa-solid fa-list-check"></i> Lista de Tarefas</h1>
+            <p id="nomeUsuario"></p>
+        </div>
+    </header>
+    <main class="tudo">
+        <section id="sectionI">
+            <form action="#">
+                <input id="inputTarefa" placeholder="  Digite sua Tarefa!" type="text" onclick="limpaInforme()">
+                <button onclick="addTarefa()" title="Adiciona uma nova tarefa a lista"><i class="fa-solid fa-plus"></i></button>
+            </form>
+            <p id="informe"></p>
+        </section>
+        <section id="sectionII">
+            <div>
+                <ul id="lista">
+                </ul>
+            </div>
+            <div id="imagemIlustrativa">
+                <figure>
+                    <img src="imagens/imagem ilustrativa 05.png" alt="imagem ilustrativa">
+                </figure>
+            </div>
+        </section>
+    </main>
+    <footer class="tudo">
+        <ul id="redesSociais">
+            <li><a href="https://www.facebook.com/" ref="external" target="_blank" title="Acessa minha página no Facebook"><i class="fa-brands fa-square-facebook"></i> facebook</a></li>
+            <li><a href="https://www.youtube.com/" rel="external" target="_blank" title="Acessa minha página no youtube"><i class="fa-brands fa-youtube"></i> youtube</a></li>
+            <li><a href="https://www.instagram.com/" rel="external" target="_blank" title="Acessa minha página no instagram"><i class="fa-brands fa-square-instagram"></i> instagram</a></li>
+        </ul>
+    </footer>
+
+    <script src="script/script01.js"></script>
+</body>
+</html>

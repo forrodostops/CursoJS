@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+</head>
+    <!--ESSA ÁREA É PARA AS CONFIGURAÇÕES DA PÁGINA WEB-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro exercício</title>
+    <style> /* NESSA ÁREA EU COLOCO OS CÓDIGOS QUE IRÃO DAR ESTILO PARA MINHA PÁGINA WEB*/
+        body{
+            background-color: bisque;
+        }
+        h1{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <!--NESSA ÁREA SÃO COLOCADAS AS INFORMAÇÕE QUE SERÃO EXIBIDAS NA PÁGINA WEB-->
+    <h1>MINHA PRIMEIRA AULA</h1>
+    <p>Essa é minha primeira aula de java script</p>
+    <script>
+       var n1 = Number(window.prompt("Digite o primeiro número!"))
+       var n2 = Number(window.prompt("Digite o segundo número!"))
+       var n3 = Number(window.prompt("Para terminar coloque mais um número!"))
+       var soma = n1 + n2 + n3
+       window.alert(`A soma entre ${n1}, ${n2} e ${n3} é exatamente ${soma}`)
+    </script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+/*    --cor01: #012E40;
+    --cor02: #024959;
+    --cor03: #026773;
+    --cor04: #3CA6A6;
+    --cor05: #F2E3D5;
+*/
+    --cor01: #4B3233;
+    --cor02: #753B3D;
+    --cor03: #F50008;
+    --cor04: #A03539;
+    --cor05: #CA2227;
+
+}
+body{
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--cor04);
+}
+#form_container{
+    background-color: white;
+    border-radius: 9px;
+    border: none;
+    box-shadow: 1px 2px 8px 0px rgba(0, 0, 0, 0.51);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+#header_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+#header_container h1::after{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: var(--cor04);
+    bottom: 0px;
+    left: 0px;
+}
+.btn_default{
+    background-color: var(--cor04);
+    border: none;
+    padding: 8px 10px;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.215);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    height: fit-content;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn_default:hover{
+    background-color: var(--cor03);
+}
+#formulario-cadastro{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.input-box{
+    box-shadow: 2px 1px 5px 0px rgba(0, 0, 0, 0.296);
+    height: 30px;
+    border-radius: 3px;
+    width: 100%;
+    padding: 5px;
+    align-items: center;
+}
+.input-box:focus-within{
+    outline: 2px solid var(--cor04)
+}
+.inputs{
+    border: none;
+    height: 20px;
+    outline: none;
+    font-size: 14px;
+}
+.inputs:has(){
+    background-color: red;
+}
+.password-icon:hover{
+    cursor: pointer;
+    color: rgb(89, 88, 88);
+}
+#box-genero-input{
+    grid-column: span 2;
+}
+#btn-cadastrar{
+    grid-column: span 2;
+}
+#genero-options{
+    display: flex;
+    gap: 26px;
+    padding-top: 6px;
+}
+#input-nascimento{
+    width: 100%;
+}
+.input-genero[type="radio"]{
+    accent-color: var(--cor04);
+}
+#box-genero-input::before{
+    content: "Senhas diferentes";
+    color: red;
+    position: relative;
+    top: -10px;
+    font-size: 14px;
+    display: none;
+}
+label{
+    color: rgb(41, 40, 40);
+}
+
+@media screen and (max-width: 500px){
+    #form_container{
+        width: 100%;
+        min-height: 100vh;
+        padding: 32px;
+
+    }
+    #formulario-cadastro{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .inputs{
+        width: 400px;
+    }
+}

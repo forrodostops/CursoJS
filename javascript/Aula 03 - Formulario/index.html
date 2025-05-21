@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/style/style.css">
+    <title>Criar conta</title>
+</head>
+<body>
+    <main id="form_container">
+        <div id="header_container">
+            <h1>Criar conta</h1>
+            <button class="btn_default">
+                <i class="fa-solid fa-right-to-bracket"></i>
+            </button>
+        </div>
+        <form id="formulario-cadastro">
+            <div>
+                <div>
+                    <label for="primeiro nome">Primeiro nome</label>
+                </div>
+                <div class="input-box">
+                    <input id="primeiroNome" class="inputs" type="text" name="primeiro nome" placeholder="Seu primeiro nome">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="Sobrenome">Sobrenome</label>
+                </div>
+                <div class="input-box">
+                    <input class="inputs" type="text" name="sobrenome" placeholder="Seu sobrenome aqui">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="Nascimento">Dada de Nascimento</label>
+                </div>
+                <div class="input-box">
+                    <input id="input-nascimento" class="inputs" type="date" name="nascimento">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="email">E-mail</label>
+                </div>
+                <div class="input-box">
+                    <input class="inputs" type="email" name="email" placeholder="exemplo@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="senha">Senha</label>
+                </div>
+                <div class="input-box">
+                    <input id="senha" class="inputs" type="password" name="password" placeholder="*****">
+                    <i id="btn-iconeI" onclick="mostrarSenha()" class="fa-solid fa-eye-slash password-icon" ></i>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="confirmarSenha">Confirmar senha</label>
+                </div>
+                <div class="input-box">
+                    <input id="confirmarSenha" class="inputs" type="password" name="passworde" placeholder="*****">
+                    <i id="btn-iconeII" onclick="mostrarSenhaConfirmar()" class="fa-solid fa-eye-slash password-icon"></i> 
+                </div>
+            </div>
+            <div id="box-genero-input">
+                <div>
+                    <label for="genero">Gênero</label>
+                </div>
+                <div id="genero-options">
+                    <div>
+                        <input class="input-genero" type="radio" name="genero" value="Feminino">
+                        <label for="feminino">Feminino</label>
+                    </div>
+                    <div>
+                        <input class="input-genero" type="radio" name="genero" value="masculino" >
+                        <label for="masculino">Masculino</label>
+                    </div>
+                </div>
+            </div>
+            <button id="btn-cadastrar" class="btn_default">
+                <i class="fa-solid fa-check"></i>
+                Criar conta
+            </button>
+        </form>
+    </main>
+    <script src="src/Javascript/script.js"></script>
+</body>
+</html>

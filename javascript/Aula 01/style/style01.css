@@ -1,0 +1,104 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(90deg, #D5E2F2, #768BA6);
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    color: #1B2B40;
+    
+}
+.container_I{
+    background-color: white;
+    width: 400px;
+    height: 600px;
+    margin: 0px 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 3px 11px 0px black;
+    padding: 20px;
+}
+#esquerdo{
+    height: 230px;
+}
+h1{
+    margin: 14px auto;
+}
+#inputTarefa{
+    width: 300px;
+    height: 40px;
+    border-radius: 6px;
+    border: 2px solid #3C5473;
+}
+button{
+    margin-top: 27px;
+    width: 120px;
+    height: 40px;
+    background-color: #1B2B40;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    transition-duration: 0.3s;
+}
+button:hover{
+    background-color:#F2B705;
+    color: white;
+    border: 2px solid #F2B705;
+}
+#teste{
+    display: flex;
+    flex-wrap: wrap;
+}
+h2{
+    margin-top: 20px;
+    border-bottom: 2px solid #1B2B40;
+}
+#listaTarefas{
+    list-style-type: none;
+    margin-top: 20px;
+}
+#listaTarefas li{
+    background-color: #B0C1D9;
+    height: 34px;
+    margin: 8px 8px;
+    border-radius: 5px;
+    padding: 7px 0px 0px 6px;
+    text-align: left;
+    border-left: 8px solid #3C5473;
+    font-size: 18px;
+    transition: 0.3s;
+}
+#listaTarefas li:hover{
+    /*background-color: #768BA6;*/
+    border-left: 18px solid #F2B705/*#3C5473*/;
+    color: white;
+}
+#fundoMensagem{
+    background-color: rgba(0, 0, 0, 0.529);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: none;
+    align-items: center;
+}
+#mensagemConfirmando{
+    background-color: #B0C1D9;
+    padding: 16px;
+    border-radius: 6px;
+    box-shadow: -2px 2px 14px 0px black;
+    width: 350px;
+    text-align: center;
+    margin: 300px auto;
+}
